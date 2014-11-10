@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+<html>
+    <head>
+    </head>
+
+    <body>
+    {% block container %}
+        <div id="container" class="noselect">
+            <h1 id="banner-center">Instant Answers</h1>
+            <form method="GET" action="{{url_for("answer")}}">
+                <input type="text" name="q" placeholder="Ask a question" maxlength="200"/>
+                <br>
+                <br>
+                <input type="submit" value="Search"/>
+                
+            </form>
+        </div>
+        {% endblock %}
+    </body>
+        
+</html>

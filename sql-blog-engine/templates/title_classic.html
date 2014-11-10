@@ -1,0 +1,24 @@
+<title></title>
+<head>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+</head>
+<body style = "background:#7BF7B7">
+  <center><table class="pure-table pure-table-bordered">
+      <th>""</th>
+      <tr>
+      <td>""</td>
+      </tr>
+      {{ posts }}
+  </table></center>
+  <center><table class="pure-table pure-table-bordered">
+      <th>"Comments"</th>
+      
+      {% for post in posts %}
+      <tr>
+      <td>{{post}}</td>
+      </tr>
+      {% endfor %}
+
+  </table></center>
+<a href = "/">Return</a>
+</body>

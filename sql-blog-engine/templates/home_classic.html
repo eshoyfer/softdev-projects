@@ -1,0 +1,34 @@
+<title>The Blog</title>
+<head>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+</head>
+<body style = "background:#7BF7B7">
+  <h1><center>WELCOME</center></h1>
+
+  <form class = "pure-form pure-form-stacked" method = "POST">
+    <fieldset>
+      <legend>|   Post Here!</legend>
+      <input type = "text" name = "title" placeholder = "Title of post">
+      <style>
+	.textbox{
+	width: 500px;
+	height: 300px;
+	white-space: wrap;
+	}
+      </style>
+
+      <textarea name = "post" cols = "50" rows = "10" placeholder = "Type Here"></textarea>
+      <button type = "submit" name = "b" class = "pure-button pure-button-primary">Confirm</button>
+  </form>
+
+
+  <center><table class="pure-table pure-table-bordered">
+      <th>""</th>
+      <tr>
+      {% for each in sqlite %}
+      <td>"{{each}}"</td>
+      {% endfor %}
+      </tr>
+  </table></center>
+
+</body>

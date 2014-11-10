@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<h1> Registration </h1>
+
+<p> You know the drill. </p>
+
+<form method="POST">
+	<div class="input-group">
+	  <span class="input-group-addon">@</span>
+	  <input type="text" class="form-control" placeholder="Username" name="username">
+	</div>
+
+	<br>
+
+	<div class="input-group">
+	  <span class="input-group-addon">P</span>
+	  <input type="password" class="form-control" placeholder="Password" name="password">
+	</div>
+
+	<br>
+
+	<button type="submit" class="btn btn-info">Let's do this!</button>
+
+	<br><br>
+</form>
+{% endblock %}

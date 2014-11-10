@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="jumbotron">
+	<h1>A new way to connect and share what you love.</h1>
+	<p class="lead">Yeah, that probably sounds like the typical fluff that startups use to describe their site on the homepage.</p>
+	<p> Either way, you're probably going to want to register below! Just hit that tempting button.</p>
+  <p> Already registered? Then just make a post! What are you waiting for? (Hopefully not Godot...)</p>
+	<p><a class="btn btn-lg btn-success" href="{{ url_for('register') }}" role="button">Sign up today</a></p>
+
+  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Make a post!
+  </button>
+
+  <br><br>
+
+  <p> Or try a search...
+
+  <form method="POST">
+    <div class="input-group">
+      <span class="input-group-addon">Title search</span>
+      <input type="text" class="form-control" name="title_search" placeholder="Search by title...">
+    </div>
+
+    <br>
+
+    <div class="input-group">
+      <span class="input-group-addon">User search</span>
+      <input type="text" class="form-control" name="user_search" placeholder="Search by username...">
+    </div>
+
+    <br>
+
+    <button type="submit" name="submit" value="search" class="btn btn-info">Seek, and ye shall find!</button>
+  </form>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">It's post making time!</h4>
+        </div>
+        <div class="modal-body">
+          <div style="text-align:center;">
+            <form method="POST">
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" placeholder="Username" name="username">
+              </div>
+
+              <br>
+
+              <div class="input-group">
+                <span class="input-group-addon">P</span>
+                <input type="password" class="form-control" placeholder="Password" name="password">
+              </div>
+
+              <br>
+
+              <div class="input-group">
+                <span class="input-group-addon">Title</span>
+                <input type="text" class="form-control" placeholder="Title" name="title">
+              </div>
+
+              <br>
+
+              <div class="form-group">
+                <span class="input-group-addon">Content</span>
+                <textarea class="form-control" rows="3" name="post"></textarea>
+              </div>
+
+              <button type="submit" value="post" name="submit" class="btn btn-info">Let's do this!</button>
+
+              <br><br>
+
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
