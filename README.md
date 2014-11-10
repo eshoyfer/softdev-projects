@@ -19,10 +19,14 @@ This **Regex Names** project aimed to use regular expression queries to identity
 *Abrar Ahmed, David Bang, Chesley Tan, Elvin Shoyfer*
 
 The **Instant Answers Screenscraper** uses BeautifulSoup and the Google Data Python library to answer questions. It can also handle self-referential location requests ("where am i") and answer them via the Google Maps Static API.
+
+HTTPS clone link: https://github.com/ChesleyTan/Instant-Answers-Screenscraper.git
 #### sql-blog-engine
 *Tina Lee, Anish Malhotra, Elvin Shoyfer, Christopher Wennendy*
 
 **Blogosphere** is a mini-blogging engine wrapped around direct SQLite commands.
+
+HTTPS clone link: https://github.com/eshoyfer/Blog.git
 #### mongo-auth
 *Elvin Shoyfer*
 
