@@ -30,4 +30,11 @@ HTTPS clone link: https://github.com/eshoyfer/Blog.git
 #### mongo-auth
 *Elvin Shoyfer*
 
-**Mongo Login** is an implementation of user authentication in Flask using MongoDB. 
+**Mongo Login** is an implementation of user authentication in Flask using MongoDB.
+
+#### league-time-viewer
+*Elvin Shoyfer & Elise Zlotnikova*
+
+**League Time Viewer** uses the <a href="https://developer.riotgames.com/">RIOT Games API</a> and <a href="https://plot.ly/">Plotly</a> to generate graphs for League of Legends players which highlight active times played within the day.
+
+HTTPS clone link: https://github.com/eshoyfer/league-time-viewer.git
