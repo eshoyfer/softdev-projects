@@ -1,0 +1,3 @@
+[submodule "league-time-viewer"]
+    path = league-time-viewer
+    url = git@github.com:eshoyfer/league-time-viewer.git
