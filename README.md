@@ -35,6 +35,6 @@ HTTPS clone link: https://github.com/eshoyfer/Blog.git
 #### league-time-viewer
 *Elvin Shoyfer & Elise Zlotnikova*
 
-**League Time Viewer** uses the <a href="https://developer.riotgames.com/">RIOT Games API</a> and <a href="https://plot.ly/">Plotly</a> to generate graphs for League of Legends players which highlight active times played within the day.
+**League Time Viewer** uses the <a href="https://developer.riotgames.com/">RIOT Games API</a> and <a href="https://plot.ly/">Plotly</a> to generate graphs for League of Legends players, highlighting active times played within the day.
 
 HTTPS clone link: https://github.com/eshoyfer/league-time-viewer.git
